@@ -30,8 +30,8 @@ public class Viatura {
     }
 
     public void mostraInfo(){
-        System.out.println("Vou mostrar a informação do carro");
-        System.out.println("Tipo de carro: " + this.tipoCarro);
+        System.out.println("Vou mostrar a informação do viatura");
+        System.out.println("Tipo: " + this.tipoCarro);
         System.out.println("Numero de rodas: " + this.numRodas);
         System.out.println("Velocidade Maxima: " + this.velMaxima);
     }
