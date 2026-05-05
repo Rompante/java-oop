@@ -4,11 +4,17 @@ public class Cruzeiro extends Barco {
     private String nomeBarco;
 
 
+    public Cruzeiro(int numQuartos, int numPisos, String nomeBarco) {
+        this.numQuartos = numQuartos;
+        this.numPisos = numPisos;
+        this.nomeBarco = nomeBarco;
+    }
     public Cruzeiro() {
         numQuartos = 0;
         numPisos = 0;
         nomeBarco = "";
     }
+
     public int getNumQuartos() {
         return numQuartos;
     }
@@ -29,7 +35,7 @@ public class Cruzeiro extends Barco {
     }
 
     public void mostraInfoCruzeiro(){
-        mostraInfo();
+        super.mostraInfo();
         System.out.println("Num Quartos " + this.numQuartos);
         System.out.println("Num Pisos " + this.numQuartos);
         System.out.println("Nome Barco " + this.nomeBarco);
