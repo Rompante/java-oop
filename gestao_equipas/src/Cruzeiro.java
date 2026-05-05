@@ -1,0 +1,37 @@
+public class Cruzeiro extends Barco {
+    private int numQuartos;
+    private int numPisos;
+    private String nomeBarco;
+
+
+    public Cruzeiro() {
+        numQuartos = 0;
+        numPisos = 0;
+        nomeBarco = "";
+    }
+    public int getNumQuartos() {
+        return numQuartos;
+    }
+    public void setNumQuartos(int numQuartos) {
+        this.numQuartos = numQuartos;
+    }
+    public int getNumPisos() {
+        return numPisos;
+    }
+    public void setNumPisos(int numPisos) {
+        this.numPisos = numPisos;
+    }
+    public String getNomeBarco() {
+        return nomeBarco;
+    }
+    public void setNomeBarco(String nomeBarco) {
+        this.nomeBarco = nomeBarco;
+    }
+
+    public void mostraInfoCruzeiro(){
+        mostraInfo();
+        System.out.println("Num Quartos " + this.numQuartos);
+        System.out.println("Num Pisos " + this.numQuartos);
+        System.out.println("Nome Barco " + this.nomeBarco);
+    }
+}
